@@ -244,7 +244,7 @@ int main(void)
       alert_active = 1;
       miss_count = 0;
 
-      printf(">> [CANH BAO <= 10cm] Khoang cach: %6.2f cm (%5.1f mm) -> LED CHOP TAT (%d ms/lan)\r\n",
+      printf("Dist: %6.2f cm [WARNING]\r\n",
              d, d * 10.0f, interval * 10);
     }
     else if (distance > DISTANCE_WARN_MAX_CM)
@@ -255,7 +255,7 @@ int main(void)
       led_blink_enabled = 0;
       LED_OFF();
 
-      printf(">> Khoang cach: %6.2f cm  (%5.1f mm) [An toan > 10cm -> LED: TAT]\r\n", 
+      printf("Dist: %6.2f cm [SAFE]\r\n", 
              distance, distance * 10.0f);
     }
     else // distance == -1.0f (Timeout)

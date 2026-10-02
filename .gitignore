@@ -6,6 +6,7 @@
 *.txt
 CMakePresets.json
 startup_stm32f103xb.s
-STM32_SFR05_distance_measure.ioc
 STM32F103xx_FLASH.ld
 .mxproject
+*.py
+Báo cáo.docx
